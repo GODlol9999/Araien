@@ -214,3 +214,9 @@ h1{
   right: 25px;
   font-size: 36px;
 }
+
+.map{
+  width: 80%;            /* 長方形の幅 */           /* 長方形の高さ */
+  
+  position: fixed;
+}
