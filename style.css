@@ -32,7 +32,7 @@
 }
 body {
 	font-family: 'Noto Sans JP', sans-serif;
-	background-image: url(img/dango03-1920x1280.jpg);
+	background-image: url(img/dango1.png);
   background-size: contain;
 	color: white;
   margin: 0;
@@ -218,5 +218,6 @@ h1{
 .map{
   width: 80%;            /* 長方形の幅 */           /* 長方形の高さ */
   
-  position: fixed;
+  position: absolute;
 }
+
