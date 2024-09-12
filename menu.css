@@ -188,9 +188,10 @@ h1{
 
 .logo {
   position: fixed;
-  top: 5px;
-  left: 60px;
-  width: 100px;
+  top: -35px;
+  left: 50px;
+  width: 170px;
+  z-index: 2;
 }
 
 .side-menu {
