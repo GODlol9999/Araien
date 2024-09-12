@@ -158,17 +158,32 @@ h1{
 }
 
 /*hamburger menu*/
+.hamburger-menu {
+  position: relative; /* 親要素の位置を基準にする */
+}
+
 .hamburger-menu .menu-button {
   font-size: 30px;
   cursor: pointer;
   padding: 10px;
-  background-color:;
   color: rgb(255, 255, 255);
   position: fixed;
   top: 20px;
   left: 20px;
-  z-index: 1;
+  z-index: 2; /* 背景よりも前に表示 */
   width: 40px;
+}
+
+.hamburger-menu .menu-button::before {
+  content: ""; /* 内容なし */
+  position: absolute;
+  top: 3px;
+  left: -6px;
+  width: 60px; /* 正方形の幅 */
+  height: 60px; /* 正方形の高さ */
+  background-color: gray; /* 背景色 */
+  z-index: -1; /* メニューアイコンの背後に配置 */
+  border-radius: 5px; /* 角を少し丸める（任意） */
 }
 
 .logo {
@@ -222,8 +237,34 @@ h1{
   top: 60px;
 }
 
+.menu{
+  text-align: center;
+}
+
 .menuimg{
   vertical-align: -60px;
+  width: 30%;
+  margin: 0;
+}
+@media screen and (max-width: 959px) { 
+	/* 959px以下に適用されるCSS（タブレット用） */
+  .menuimg{
+    width: 85%;
+  }
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+  .menuimg{
+    width: 85%;
+  }
+}
+.text1{
+  text-align: center;
+}
+.henimg{
   width: 85%;
+}
+.henna{
+ text-align: center;
 }
 
