@@ -188,9 +188,9 @@ h1{
 
 .logo {
   position: fixed;
-  top: -35px;
-  left: 50px;
-  width: 170px;
+  top: 0px;
+  left: 90px;
+  width: 150px;
   z-index: 2;
 }
 
