@@ -161,25 +161,42 @@ h1{
   padding: 0;
 }
 
+
 /*hamburger menu*/
+.hamburger-menu {
+  position: relative; /* 親要素の位置を基準にする */
+}
+
 .hamburger-menu .menu-button {
   font-size: 30px;
   cursor: pointer;
   padding: 10px;
-  background-color:gray;
   color: rgb(255, 255, 255);
   position: fixed;
   top: 20px;
   left: 20px;
-  z-index: 1;
+  z-index: 2; /* 背景よりも前に表示 */
   width: 40px;
 }
 
+.hamburger-menu .menu-button::before {
+  content: ""; /* 内容なし */
+  position: absolute;
+  top: 3px;
+  left: -6px;
+  width: 60px; /* 正方形の幅 */
+  height: 60px; /* 正方形の高さ */
+  background-color: gray; /* 背景色 */
+  z-index: -1; /* メニューアイコンの背後に配置 */
+  border-radius: 5px; /* 角を少し丸める（任意） */
+}
+
+
 .logo {
   position: fixed;
-  top: 5px;
-  left: 60px;
-  width: 100px;
+  top: -35px;
+  left: 50px;
+  width: 170px;
 }
 
 .side-menu {
@@ -217,7 +234,6 @@ h1{
 
 .map{
   width: 80%;            /* 長方形の幅 */           /* 長方形の高さ */
-  
   position: absolute;
 }
 
