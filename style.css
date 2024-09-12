@@ -197,6 +197,7 @@ h1{
   top: -35px;
   left: 50px;
   width: 170px;
+  z-index: 2;
 }
 
 .side-menu {
